@@ -46,3 +46,15 @@ main{
     max-height: 400px;
     vertical-align: center;
 }
+
+footer{
+    margin-top: 20px;
+    border-top: solid black 1px;
+    text-align: center;
+    position: sticky;
+}
+
+.Adminlog{
+    text-decoration: none;
+    color: black;
+}
