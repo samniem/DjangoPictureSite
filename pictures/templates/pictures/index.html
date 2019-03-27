@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matt's Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'pictures/main.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Matt's Photography</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Book Me</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        {% for picture in files %}
+            <div class="Container">
+                {% load static %}
+                <img class="Image" src="{% static '/pictures/pix/' %}{{picture}}"/>
+            </div>
+        {% endfor %}
+        <div>
+            <a  class="Adminlog" href="/admin">Admin login</a>
+        </div>
+    </main>
+</body>
+</html>
+
